@@ -13,7 +13,7 @@ export default function NavItem(props: Props) {
            focus:ring-1 focus:ring-yellow-200
            md:p-1 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28"
     >
-      <span className="text-xs place-self-start  xl:text-sm">{props.number}</span>
+      <span className="text-xs place-self-start xl:text-sm">{props.number}</span>
       <span className="text-2xl place-self-center group-hover:underline md:text-3xl lg:text-4xl xl:text-5xl">
         {props.symbol}
       </span>

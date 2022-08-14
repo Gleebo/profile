@@ -24,7 +24,7 @@ export default function SkillsTable() {
   <ul className="flex flex-wrap text-slate-800 justify-center">
     {
       skills.map((skill, i) => (
-        <SkillCell number={i+1} name={skill.name} imgSrc={skill.imgSrc} key={skill.name}/>
+        <SkillCell number={++i} name={skill.name} imgSrc={skill.imgSrc} key={skill.name}/>
       ))
     }
   </ul>

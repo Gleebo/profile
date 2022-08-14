@@ -18,7 +18,7 @@ export default function SkillCell({ number, imgSrc, name }: Props) {
         {number}
       </span>
       <span className="relative">
-        <Image src={imgSrc} alt={name} layout="fill" priority={number === 1} />
+        <Image src={imgSrc} alt={name} layout="fill"/>
       </span>
       <span className="flex items-center justify-end">{name}</span>
     </li>
