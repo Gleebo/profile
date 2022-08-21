@@ -1,4 +1,6 @@
 import '../styles/globals.css'
+import '@fortawesome/fontawesome-svg-core'
+import '../fontello/css/fontello.css'
 import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
