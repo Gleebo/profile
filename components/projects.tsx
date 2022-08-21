@@ -4,8 +4,8 @@ const projects = [
   {
     title: "Web Profile",
     repoLink: "https://github.com/Gleebo/profile",
-    stack: ["React", "Next", "Tailwind"],
-    description: 'This web page! I made it with NextJS, ReactJS and TailwindCSS. It is sort of an online CV/Portfolio.'
+    stack: ["TypeScript", "React", "Next", "Tailwind"],
+    description: 'This web page! I made it with TypeScript, NextJS, ReactJS and TailwindCSS. It is sort of an online CV/Portfolio.'
   },
 ];
 
