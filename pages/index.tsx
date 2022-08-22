@@ -107,11 +107,55 @@ const Home: NextPage = () => {
           <Section id="experience" title="Experience">
             <Card
               title="Software Developer"
-              subtitle="Zepto-sky"
+              subtitle="Genius IT Solutions"
               location="Sydney"
               period="May 2021 - Present"
             >
               <List>
+                <li>
+                  Learned new tach stack, developed and integrated my first
+                  feature in a major facility management software in just 1
+                  month
+                </li>
+                <li>
+                  Learned new tach stack, developed and integrated my first
+                  feature in a major facility management software in just 1
+                  month
+                </li>
+                <li>
+                  Learned new tach stack, developed and integrated my first
+                  feature in a major facility management software in just 1
+                  month
+                </li>
+                <li>
+                  Learned new tach stack, developed and integrated my first
+                  feature in a major facility management software in just 1
+                  month
+                </li>
+              </List>
+            </Card>
+            <Card
+              title="Peer Mentor"
+              subtitle="University of Sydney"
+              location="Sydney"
+              period="Feb 2020 - Aug 2020"
+            >
+              <List>
+                <li>
+                  Learned new tach stack, developed and integrated my first
+                  feature in a major facility management software in just 1
+                  month
+                </li>
+                <li>
+                  Learned new tach stack, developed and integrated my first
+                  feature in a major facility management software in just 1
+                  month
+                </li>
+                <li>
+                  Learned new tach stack, developed and integrated my first
+                  feature in a major facility management software in just 1
+                  month
+                </li>
                 <li>
                   Learned new tach stack, developed and integrated my first
                   feature in a major facility management software in just 1
