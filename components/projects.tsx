@@ -1,6 +1,6 @@
-import ProjectCard from "./proejct-card";
+import ProjectCard, { Project } from "./proejct-card";
 
-const projects = [
+const projects: Project[] = [
   {
     title: "Web Profile",
     repoLink: "https://github.com/Gleebo/profile",
@@ -9,10 +9,19 @@ const projects = [
       "This web page! I made it with TypeScript, NextJS, ReactJS and TailwindCSS. It is sort of an online CV/Portfolio.",
   },
   {
+    title: "PCP2P",
+    link: "https://shielded-scrubland-77362.herokuapp.com",
+    repoLink: "https://github.com/Gleebo/marketplace_app",
+    stack: ["Ruby", "Rails", "Tailwind", "PostgreSQL"],
+    description:
+      "A 2 sided marketplace web application built when I was learning web developement. Made with Ruby on Rails and PostgreSQL",
+  },
+  {
     title: "Battle Gems",
     repoLink: "https://github.com/Gleebo/terminal-app",
     stack: ["Ruby"],
-    description: "A fun little project. Terminal based Turn Based RPG that I made to improve my OOP understanding. Written in Ruby."
+    description:
+      "A Turn Based RPG playable in terminal that I made to improve my OOP understanding. Written in Ruby.",
   },
 ];
 
