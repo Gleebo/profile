@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Card from "../components/card";
-import List from "../components/list";
+import EducationSection from "../components/education-section";
+import ExperienceSection from "../components/experience-section";
 import NavItem from "../components/nav-item";
 import Projects from "../components/projects";
 import Section from "../components/section";
@@ -12,14 +12,15 @@ const title = `Gleb's profile`;
 const Home: NextPage = () => {
   const navItems = [
     { name: "Skills", symbol: "Sk", number: 1, src: "#skills" },
-    { name: "Education", symbol: "Ed", number: 2, src: "#education" },
-    { name: "Experience", symbol: "Xp", number: 3, src: "#experience" },
     { name: "Projects", symbol: "Pr", number: 4, src: "#projects" },
+    { name: "Experience", symbol: "Xp", number: 3, src: "#experience" },
+    { name: "Education", symbol: "Ed", number: 2, src: "#education" },
   ];
   return (
     <>
       <Head>
         <title>{title}</title>
+        <link rel="shortcut icon" href="favicon-16x16.png" type="image/png" />
       </Head>
       <div className="min-h-screen bg-slate-800 text-yellow-100">
         <header className="container mx-auto min-h-[75vh] flex justify-center align-middle">
@@ -27,8 +28,13 @@ const Home: NextPage = () => {
             <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-2">
               Hi, I am Gleb
             </h1>
-            <p className="sm:text-lg md:text-xl lg:text-2xl">
-              I am a software developer
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-[75ch] pl-2">
+              I am a software developer who loves solving problems. I currently
+              work at Genius IT Solutions where I develop and maintain a major
+              facility management software. I have a keen interest in JavaScript
+              language, frameworks and libraries. I also love fantasy novels and
+              just in general everything fantasy related. Scroll down for more
+              info on my experience, projects, skills and education.
             </p>
           </div>
         </header>
@@ -49,123 +55,14 @@ const Home: NextPage = () => {
           <Section id="skills" title="Skills">
             <SkillsTable />
           </Section>
-          <Section id="education" title="Education">
-            <Card
-              title="Professional Year"
-              subtitle="Performance Education"
-              location="Sydney"
-              period="Aug 2021"
-            >
-              <List>
-                <li>Studied Australian work culture</li>
-                <li>
-                  Improved communication and presentation skills through
-                  numerous presentations and group tasks
-                </li>
-                <li>Successfully finished work placement and got hired</li>
-              </List>
-            </Card>
-            <Card
-              title="Master of IT"
-              subtitle="University of Sydney"
-              location="Sydney"
-              period="Aug 2020"
-            >
-              <List>
-                <li>
-                  Obtained High Distinction Software Quality Engineering,
-                  Complex systems, Web Development
-                </li>
-                <li>
-                  Obtained Distinction in Mobile Application Development,
-                  Project Management
-                </li>
-                <li>
-                  Finished a capstone project in a group of 5 and obtained High
-                  Distinction
-                </li>
-              </List>
-            </Card>
-            <Card
-              title="Bachelor of IT"
-              subtitle="James Cook University"
-              location="Singapore"
-              period="Dec 2017"
-            >
-              <List>
-                <li>
-                  Obtained High Distinction Game Design, 3D Modeling and
-                  Animation, Game Development Techniques
-                </li>
-                <li>
-                  Successfully developed a visual novel game in Unity with a
-                  group of 6 and obtained High Distinction
-                </li>
-              </List>
-            </Card>
-          </Section>
-          <Section id="experience" title="Experience">
-            <Card
-              title="Software Developer"
-              subtitle="Genius IT Solutions"
-              location="Sydney"
-              period="May 2021 - Present"
-            >
-              <List>
-                <li>
-                  Learned new tach stack, developed and integrated my first
-                  feature in a major facility management software in just 1
-                  month
-                </li>
-                <li>
-                  Learned new tach stack, developed and integrated my first
-                  feature in a major facility management software in just 1
-                  month
-                </li>
-                <li>
-                  Learned new tach stack, developed and integrated my first
-                  feature in a major facility management software in just 1
-                  month
-                </li>
-                <li>
-                  Learned new tach stack, developed and integrated my first
-                  feature in a major facility management software in just 1
-                  month
-                </li>
-              </List>
-            </Card>
-            <Card
-              title="Peer Mentor"
-              subtitle="University of Sydney"
-              location="Sydney"
-              period="Feb 2020 - Aug 2020"
-            >
-              <List>
-                <li>
-                  Learned new tach stack, developed and integrated my first
-                  feature in a major facility management software in just 1
-                  month
-                </li>
-                <li>
-                  Learned new tach stack, developed and integrated my first
-                  feature in a major facility management software in just 1
-                  month
-                </li>
-                <li>
-                  Learned new tach stack, developed and integrated my first
-                  feature in a major facility management software in just 1
-                  month
-                </li>
-                <li>
-                  Learned new tach stack, developed and integrated my first
-                  feature in a major facility management software in just 1
-                  month
-                </li>
-              </List>
-            </Card>
-          </Section>
           <Section id="projects" title="Projects">
             <Projects />
+          </Section>
+          <Section id="experience" title="Experience">
+            <ExperienceSection />
+          </Section>
+          <Section id="education" title="Education">
+            <EducationSection />
           </Section>
         </main>
       </div>
