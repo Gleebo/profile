@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-type Project = {
+export type Project = {
   title: string;
   description: string;
   link?: string;
@@ -42,7 +42,7 @@ export default function ProjectCard({ project, children }: Props) {
         </h3>
       </header>
       <main>
-        <p className="md:text-lg lg:text-xl xl:text-2xl p-2">
+        <p className="md:text-lg lg:text-xl xl:text-2xl p-2 max-w-[75ch]">
           {project.description}
         </p>
       </main>
